@@ -1,0 +1,32 @@
+.header{
+    padding: 20px 30px 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    // box-shadow: rgb(0 21 41 / 8%) 0px 1px 4px;
+    .title{
+        margin-top: 8px;
+    }
+}
+.main{
+    margin: 20px;
+    background-color: #fff;
+    padding: 40px;
+    .ant-col{
+        padding: 0;
+    }
+}
+
+.changeStatus{
+    display: flex !important;
+    justify-content: space-between !important;
+}
+.pagination{
+     margin: 16px 0!important;
+     position: relative;
+     height: 32px;
+    .ant-pagination{
+        position: absolute;
+    right: 0;
+    box-sizing: border-box;
+}
+}

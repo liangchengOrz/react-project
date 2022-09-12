@@ -1,0 +1,34 @@
+.header {
+  padding: 20px 30px 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  // box-shadow: rgb(0 21 41 / 8%) 0px 1px 4px;
+  .title {
+    margin-top: 8px;
+  }
+}
+.main {
+  margin: 20px;
+  padding: 40px;
+  background-color: #fff;
+}
+.top {
+  border-bottom: 1px solid rgba(223, 215, 215, 0.6);
+}
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  div {
+    margin-bottom: 15px;
+  }
+}
+.content {
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+}
+.bottom{
+    margin-top: 20px;
+}

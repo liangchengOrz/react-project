@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://gw.alipayobjects.com/zos/rmsportal/TVYTbAXWheQpRcWDaDMu.svg);
+    background-color: #000000;
+    height: 100vh;
+}
+
+.login {
+    width: 300px;
+    padding: 0;
+
+    .login-form-button {
+        width: 100%;
+    }
+
+    .ant-form-item {
+        margin: 0 0 32px;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+    .ant-col{
+    padding: 0 !important;
+}
+}
+
+.ant-form-item-with-help {
+    transition: none;
+}
