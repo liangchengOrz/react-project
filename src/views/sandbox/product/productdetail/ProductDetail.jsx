@@ -10,6 +10,7 @@ export default function ProductDetail() {
   const { id } = useParams()
   //  初始请求数据
   useEffect(() => {
+    document.title='商品详情'
     axios({
       url: '/api/manage/product/detail.do?productId=' + id,
       method: 'GET'

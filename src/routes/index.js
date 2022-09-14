@@ -11,22 +11,33 @@ import ProductDetail from '../views/sandbox/product/productdetail/ProductDetail'
 import CategoryList from '../views/sandbox/category/categorylist/CategoryList'
 import OrderDetail from '../views/sandbox/order/orderdetail/OrderDetail'
 import NotFound from '../views/sandbox/notfound/NotFound'
+import Page from '../components/Page'
 const routes=[
     {
         path:'/login',
         element:<Login/>
     },
+    // {  
+    //     path:'/login',
+    //     render:(props)=>{
+    //         <Page title='登录'>
+    //             <Login {...props}/>
+    //         </Page>
+    //     }
+    // },
     {
         path:'/sandbox',
         element:<SandBox/>,
         children:[
             {
                 path:'/sandbox/home',
-                element:<Home/>
+                element:<Home/>,
+                title:'首页'
             },
             {
                 path:'/sandbox/product',
-                element:<Product/>
+                element:<Product/>,
+                title:'商品列表'
             },
             {
                 path:'/sandbox/product/editor/:id',

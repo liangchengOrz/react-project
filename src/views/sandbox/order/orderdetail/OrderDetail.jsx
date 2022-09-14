@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {Breadcrumb} from 'antd'
 import './orderdetail.scss'
 export default function OrderDetail() {
+  useEffect(()=>{
+    document.title='订单详情'
+  },[])
   return (
     <div>
       <div className='header'>

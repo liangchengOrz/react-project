@@ -23,6 +23,7 @@ export default function ProductEditor() {
   const [cateid2, setCateid2] = useState('')
   // 初始化数据
   useEffect(() => {
+    document.title=id?'修改商品':'新增商品'
     axios({
       url: '/api/manage/category/get_category.do?categoryId=0',
       method: 'GET'

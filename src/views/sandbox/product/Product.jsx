@@ -126,6 +126,7 @@ export default function Product() {
         }
       }
     })
+    document.title='商品列表'
   }, [])
   // 分页器变化
   const showSizeChange = (num) => {

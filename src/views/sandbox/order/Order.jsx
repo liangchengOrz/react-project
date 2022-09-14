@@ -7,6 +7,7 @@ export default function Order() {
   const [total,setTotal]=useState(0)
   const [current,setCurrent]=useState(1)
   useEffect(()=>{
+    document.title='订单列表'
     axios({
       url:'/api/manage/order/list.do?pageSize=10&pageNum=1',
       method:"GET"

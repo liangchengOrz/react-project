@@ -53,6 +53,7 @@ export default function User() {
 
   }
   useEffect(()=>{
+    document.title='用户列表'
     axios({
       url:'/api/manage/user/list.do?pageSize=10&pageNum=1',
       method:'GET'

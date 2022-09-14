@@ -18,6 +18,7 @@ export default function Category() {
   const [total, setTotal] = useState(0)
   const [current, setCurrent] = useState(1)
   useEffect(() => {
+    document.title='分类列表'
     axios({
       url: '/api/manage/category/get_category.do?categoryId=0',
       method: 'GET'

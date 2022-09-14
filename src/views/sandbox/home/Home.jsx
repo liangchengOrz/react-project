@@ -21,6 +21,7 @@ export default function Home() {
 
       }
     })
+    document.title='首页'
   }, []);
   const navigateTo=(title)=>{
     navigate(title==='userCount'?'/sandbox/user':title==='productCount'?'/sandbox/product':'/sandbox/order')
